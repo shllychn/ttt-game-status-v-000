@@ -58,8 +58,7 @@ def winner(board)
   else WIN_COMBINATIONS.each do |win_combo|
     if (board[win_combo[0]]) == "O"
       return 'O'
-  else WIN_COMBINATIONS.each do |win_combo|
-    if (board[win_combo[0]]) == "X"
+  else (board[win_combo[0]]) == "X"
       return 'X'
     end
   end
